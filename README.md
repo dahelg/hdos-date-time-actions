@@ -1,5 +1,7 @@
 # hdos-date-time-actions
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 `hdos-date-time-actions` is a JavaScript library designed to give developers a simple solution to control DOM actions based on date and time. By using class names or data attributes, developers can easily manage the visibility and behavior of any HTML element on their page. The library supports a variety of actions such as "hide", "show", "remove", "add", "animate", and even side-effects like "fetch" new data, making it versatile for a wide range of applications.
 
 ## Development Status
