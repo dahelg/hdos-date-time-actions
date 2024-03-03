@@ -8,7 +8,9 @@ This project is currently in development. Features and documentation are activel
 
 ## Installation
 
-(TODO: Add installation instructions here)
+TODO: Add installation instructions
+
+Currently, the library is not yet published to npm.
 
 ## Usage
 
@@ -17,6 +19,20 @@ This project is currently in development. Features and documentation are activel
 ## Contributing
 
 I welcome contributions to `hdos-date-time-actions`! If you're interested in helping improve the library, please read our contributing guidelines. (TODO: Add a link to contributing guidelines)
+
+### Installation for Development
+
+Install pnpm if you haven't already by following the instructions on the [pnpm website](https://pnpm.io/installation). In most cases, this can be done globally via npm:
+
+``` bash
+npm install -g pnpm
+```
+
+Then, install the package. Normally, it should also automaticially fetch and install the correct version specified in the `.npmrc` file.
+
+``` bash
+pnpm i
+```
 
 ## License
 
