@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "knisterpeter.vscode-commitizen",
+        "mhutchie.git-graph",
+        "wix.vscode-import-cost",
+        "jacano.vscode-pnpm",
+        "yoavbls.pretty-ts-errors",
+        "pflannery.vscode-versionlens",
+        "gruntfuggly.todo-tree",
+        "jgclark.vscode-todo-highlight",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+    ]
+}
