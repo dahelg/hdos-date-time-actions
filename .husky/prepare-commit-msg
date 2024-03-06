@@ -1,0 +1,16 @@
+COMMIT_MSG_FILE=$1
+
+echo "***prepare-commit-msg"
+echo "Commit message:"
+cat $COMMIT_MSG_FILE
+
+if [ ! -s "$COMMIT_MSG_FILE" ]; then
+  exec < /dev/tty && pnpm cz --hook || true
+fi
+# TODO: find out if this version is better / necessary
+# check if terminal is available (e.g. when using vscode ui to commit, it isn't available)
+# if [ -t 1 ]; then
+#   exec < /dev/tty && pnpm cz --hook || true
+# else
+#   pnpm cz --hook || true
+# fi

@@ -1,0 +1,3 @@
+# echo "**husky**: test pre-commit hook without committing was successful"
+# exit 1
+pnpm test
