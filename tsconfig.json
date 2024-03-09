@@ -29,5 +29,13 @@
 
     /* If your code runs in the DOM: */
     "lib": ["es2022", "dom", "dom.iterable"],
-  }
+
+    /* More custon options: */
+    "explainFiles": true
+  },
+  "include": [
+    "src/**/*"
+    // "commitlint.config.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
 }
