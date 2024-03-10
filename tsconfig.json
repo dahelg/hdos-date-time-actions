@@ -28,6 +28,30 @@
     "declaration": true,
 
     /* If your code runs in the DOM: */
-    "lib": ["es2022", "dom", "dom.iterable"],
-  }
+    "lib": [
+      "es2022",
+      "dom",
+      "dom.iterable"
+    ],
+
+    /* More custon options: */
+    "explainFiles": true,
+
+    /**
+     *  @see https://www.typescriptlang.org/tsconfig#allowSyntheticDefaultImports
+     */
+    "allowSyntheticDefaultImports": true,
+    // "allowArbitraryExtensions": true,
+    // "moduleSuffixes": [".*.ts", ""]
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*", "*.ts", "*.tsx", "*.js", "*.jsx"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "commitlint.config.ts",
+    "eslint.config.js",
+  ],
+  "exclude": ["node_modules", "dist"]
 }

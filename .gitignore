@@ -1,2 +1,10 @@
 # Dependency directory
 node_modules
+.DS_Store
+
+# Distribution folder
+dist
+
+
+# Environment files
+.env*

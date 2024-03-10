@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hdos-date-time-actions library</title>
+    <!-- <script type="module" src="../dist/index.js"></script> -->
+    <script type="module">
+        import { initDateTimeActions } from '../dist/index.js';
+
+        function loadScript() {
+            console.log('index.js loaded OK');
+            const result = initDateTimeActions();
+            console.log('initDateTimeActions result:', result);
+        }
+
+        loadScript();
+    </script>
+</head>
+<body>
+    Open console to see logs.
+</body>
+</html>

@@ -2,9 +2,12 @@
   "name": "hdos-date-time-actions",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "lint": "eslint .",
     "test": "echo \"Warning: no test specified\" && exit 0",
     "commit": "cz",
     "commit-msg": "husky",
@@ -26,9 +29,12 @@
     "commitizen": "4.3.0",
     "conventional-changelog-conventionalcommits": "7.0.2",
     "cz-conventional-changelog": "3.3.0",
+    "eslint": "8.57.0",
     "husky": "9.0.11",
     "standard-version": "9.5.0",
-    "typescript": "5.3.3"
+    "ts-jest": "29.1.2",
+    "typescript": "5.3.3",
+    "typescript-eslint": "7.1.1"
   },
   "config": {
     "commitizen": {

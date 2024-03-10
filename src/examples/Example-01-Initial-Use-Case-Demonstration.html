@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Element Visibility Based on Date</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Dynamic Element Visibility Based on Date</h1>
+      <p>
+        This example demonstrates how to conditionally hide elements based on a
+        specific date and time. You can save this file, and change the date in the className to see this live.
+        In this example, the date is only checked on reload, so you have to refresh the page manually.
+      </p>
+    </div>
+    <div class="hide-after-2024-03-10-17-58">
+      This div will be hidden after March 10th, 2024, 17:58 local time.
+    </div>
+    <!-- More elements with hide-after- classes -->
+
+    <script>
+      function hideElementsAfterDate() {
+        // Find all elements that need to be conditionally hidden
+        const elementsToHide = document.querySelectorAll(
+          '[class*="hide-after-"]'
+        );
+
+        elementsToHide.forEach((element) => {
+          // Extract dates from class names
+          const classNames = element.className.split(/\s+/);
+          const hideAfterClass = classNames.find((className) =>
+            className.startsWith('hide-after-')
+          );
+          if (!hideAfterClass) return;
+
+          // Format: hide-after-YYYY-MM-DD-HH-MM
+          const [domAction, period, year, month, day, hour, minute] =
+            hideAfterClass.split('-');
+          const targetDate = new Date(year, month - 1, day, hour, minute); // Note: month is 0-indexed
+
+          // Get the current local date and time
+          const now = new Date();
+
+          // Compare and hide if current date is past the target date
+          if (now > targetDate) {
+            element.classList.add('hidden');
+          }
+        });
+      }
+
+      // Listen for DOMContentLoaded event to run the function
+      document.addEventListener('DOMContentLoaded', hideElementsAfterDate);
+    </script>
+  </body>
+</html>
