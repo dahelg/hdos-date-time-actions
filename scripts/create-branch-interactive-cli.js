@@ -57,7 +57,8 @@ const createBranchInteractive = async () => {
 
   if (shouldCheckout) {
     execSync(`git checkout ${branchName}`);
-    console.log(`Switched to branch: ${branchName}`);
+    // this is logged by git anyway
+    // console.log(`Switched to branch: ${branchName}`);
   } else {
     console.log('Did not switch to new branch.');
   }

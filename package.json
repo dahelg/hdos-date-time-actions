@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "test": "jest",
     "test:watch": "jest --watch",
-    "create-branch": "node ./scripts/create-branch.js",
+    "create-branch": "node ./scripts/create-branch-interactive-cli.js",
     "commit": "cz",
     "commit-msg": "husky",
     "prepare": "husky",
