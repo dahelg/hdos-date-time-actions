@@ -1,7 +1,6 @@
 COMMIT_MSG_FILE=$1
 
-echo "***prepare-commit-msg"
-echo "Commit message:"
+echo "[prepare-commit-msg] Commit message:"
 cat $COMMIT_MSG_FILE
 
 if [ ! -s "$COMMIT_MSG_FILE" ]; then
