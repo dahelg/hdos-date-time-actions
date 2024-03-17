@@ -56,19 +56,3 @@ describe('isValidBranchName', () => {
     });
   });
 });
-
-// describe('isValidBranchName', () => {
-//   it('should return true for valid branch names', () => {
-//     expect(isValidBranchName('feature/my-feature')).toBe(true);
-//     expect(isValidBranchName('bugfix/my-bugfix')).toBe(true);
-//     expect(isValidBranchName('hotfix/my-hotfix')).toBe(true);
-//     expect(isValidBranchName('feature/my-feature-1')).toBe(true);
-//   });
-
-//   it('should return false for invalid branch names', () => {
-//     expect(isValidBranchName('my-feature')).toBe(false);
-//     expect(isValidBranchName('feature/myFeature')).toBe(false);
-//     expect(isValidBranchName('feature/-my-feature')).toBe(false);
-//     expect(isValidBranchName('feature/my-feature-')).toBe(false);
-//   });
-// });

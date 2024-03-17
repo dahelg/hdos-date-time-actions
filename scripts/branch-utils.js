@@ -12,11 +12,6 @@ export const disallowedNames = [
   'null',
 ];
 
-// export const isValidBranchName = (branchName) =>
-//   new RegExp(`^(${prefixes.join('|')})${separator}${allowedLetters}$`).test(
-//     branchName
-//   );
-
 export const isValidBranchName = (branchName) => {
   const nameParts = branchName.split(separator);
   const name = nameParts[nameParts.length - 1];
