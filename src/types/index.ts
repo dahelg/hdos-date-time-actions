@@ -1,1 +1,1 @@
-export * from './date-time-action-types.js';
+export * from './date-time-action-types';
