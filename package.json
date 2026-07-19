@@ -23,6 +23,7 @@
   "keywords": [],
   "author": "Helge Drews",
   "license": "MIT",
+  "packageManager": "pnpm@10.34.5",
   "devDependencies": {
     "@commitlint/cli": "19.0.3",
     "@commitlint/config-conventional": "19.0.3",
