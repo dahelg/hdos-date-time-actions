@@ -10,14 +10,43 @@ This project is currently in development. Features and documentation are activel
 
 ## Installation
 
-TODO: Add installation instructions
+The library is not yet published to npm. Until a first release is
+available, you can install it directly from the repository:
 
-Currently, the library is not yet published to npm.
-Testcommit
+``` bash
+git clone https://github.com/dahelg/hdos-date-time-actions.git
+cd hdos-date-time-actions
+pnpm install
+pnpm run build
+```
+
+The compiled output (including type declarations) is written to `dist/`.
 
 ## Usage
 
-(TODO: Provide basic usage examples and describe how developers can use this library to control DOM elements based on date and time)
+The public API is still minimal while the library is under active
+development. The current entry point exposes an initialization function:
+
+``` typescript
+import { initDateTimeActions } from "hdos-date-time-actions";
+
+initDateTimeActions();
+```
+
+The intended usage pattern is driven by class names on HTML elements.
+For example, an element can declare when it should be hidden using a
+class of the format `hide-after-YYYY-MM-DD-HH-MM`:
+
+``` html
+<div class="hide-after-2024-03-10-17-58">
+  This div will be hidden after March 10th, 2024, 17:58 local time.
+</div>
+```
+
+A standalone demonstration of this pattern (without the library) can be
+found in `src/examples/Example-01-Initial-Use-Case-Demonstration.html`.
+Further actions such as "show", "remove", "add", "animate" and "fetch"
+are planned but not implemented yet.
 
 ## Contributing
 
