@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { execSync } from 'child_process';
 import readline from 'readline';
-import { prefixes, allowedLetters, isValidBranchName } from './branch-utils.js';
+import { prefixes, isValidBranchName } from './branch-utils.js';
 
 const rl = readline.createInterface({
   input: process.stdin,

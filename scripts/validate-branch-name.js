@@ -1,4 +1,3 @@
-import { execSync } from 'child_process';
 import { prefixes, isValidBranchName, getBranchName } from './branch-utils.js';
 
 const branchName = getBranchName();
